@@ -27,6 +27,10 @@
         box-sizing: border-box;
       }
 
+      body::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Edge */
+      }
+
       body {
         font-family: "Poppins", sans-serif;
         background: var(--bg-gradient);
@@ -155,8 +159,6 @@
         pointer-events: none;
         border-radius: 15px;
       }
-
-
 
       .button-container {
         display: flex;
@@ -362,7 +364,9 @@
   <body>
     <div class="container">
       <div class="header">
-        <h2><i class="fas fa-camera"></i> Facial Recognition Attendance System</h2>
+        <h2>
+          <i class="fas fa-camera"></i> Facial Recognition Attendance System
+        </h2>
         <p class="subtitle">Fast, secure attendance tracking system</p>
       </div>
 
@@ -457,7 +461,6 @@
       }
 
       // Helper function to get CSRF token
-      
     </script>
   </body>
 </html>
